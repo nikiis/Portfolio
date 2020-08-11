@@ -1,6 +1,6 @@
 //Typing effect
 function typingEffect() {
-    const texts = ["Hi, I'm Nicole.", "Hola, soy Nicole.", "Labas, esu Nicole."];
+    const texts = ["Hi, I'm Nicole.", "Hola, soy Nicole.", "你好, 我是Nicole."];
     let count = 0;
     let index = 0;
     let currentText = '';
