@@ -1,6 +1,6 @@
 //Typing effect
 function typingEffect() {
-    const texts = ["Nicole.", "a developer.", "cool."];
+    const texts = ["Hi, I'm Nicole.", "Hola, soy Nicole.", "Labas, esu Nicole."];
     let count = 0;
     let index = 0;
     let currentText = '';
@@ -102,11 +102,38 @@ function observeSectionForNav() {
 }
 
 
+// adding responsive burger for mobile sizes
+function navSlide() {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ''
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10}s`;
+            }
+        });
+
+        burger.classList.toggle('toggle');
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    });
+}
 
 //main function
 function main() {
     scrollEffect();
-    // typingEffect();
+    navSlide();
+    typingEffect();
     // navAnimation();
     observeSectionForNav();
 };

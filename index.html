@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Effect Test</title>
+    <title>My Portfolio</title>
     <!-- google fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat:wght@400;600&display=swap"
@@ -18,12 +18,17 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a data-page="about-me" href="#about-me">About</a></li>
-                <li><a data-page="portfolio" href="#portfolio">Portfolio</a></li>
-                <li><a data-page="cv" href="#cv">Skills</a></li>
-                <li><a data-page="contact" href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a class="nav-link" data-page="about-me" href="#about-me">About</a></li>
+                <li><a class="nav-link" data-page="portfolio" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" data-page="cv" href="#cv">Skills</a></li>
+                <li><a class="nav-link" data-page="contact" href="#contact">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
@@ -32,7 +37,6 @@
         <div class="title vertical-align">
             <div class="intro-items">
                 <div class="typing-text">
-                    <h1 class="first-text">Hi, I'm</h1>
                     <h1 class="typing my-name-text"> Nicole </h1>
                 </div>
             </div>
@@ -58,12 +62,73 @@
     <section id="portfolio" class="content">
         <h1>Portfolio.</h1>
         <div class="portfolio-items">
-            <div class="port-item box1"></div>
-            <div class="port-item box2"></div>
-            <div class="port-item box3"></div>
-            <div class="port-item box4"></div>
-            <div class="port-item box5"></div>
-            <div class="port-item box6"></div>
+            <div class="port-item box1">
+                <div class="portfolio-content">
+                    <h2>Todo List</h2>
+                    <hr>
+                    <p>EJS based todo list web application. Simple, yet stylish and helps with procrastination ;)</p>
+                    <div class="portfolio-anchors">
+                        <a class="github-btn" href="#">Github</a>
+                        <a class="demo-btn" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="port-item box2">
+                <div class="portfolio-content">
+                    <h2>Mr Lee Takeaway</h2>
+                    <hr>
+                    <p>Responsive website made for a small business based in Scotland. Developed using bootstrap4 and
+                        jQuery. Also designed the logo and the menu! </p>
+                    <div class="portfolio-anchors">
+                        <a class="demo-btn" href="https://www.mrleetakeaway.co.uk" target="_blank">View Website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="port-item box3">
+                <div class="portfolio-content">
+                    <h2>Sliding Text</h2>
+                    <hr>
+                    <p>Eye-catching sliding text animation animated only using CSS. Great for portfolios!</p>
+                    <div class="portfolio-anchors">
+                        <a class="github-btn" href="#">Github</a>
+                        <a class="demo-btn" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="port-item box4">
+                <div class="portfolio-content">
+                    <h2>Newsletter Sign-up</h2>
+                    <hr>
+                    <p>Newsletter sign-up page created using Mailchimp API, Node.js and EJS. Sadly, you won’t be getting
+                        any actual newsletters from me though :(</p>
+                    <div class="portfolio-anchors portfolio-anchors-column">
+                        <a class="github-btn" href="#">Github</a>
+                        <a class="demo-btn" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="port-item box5">
+                <div class="portfolio-content">
+                    <h2>Cool UI</h2>
+                    <hr>
+                    <p>Experimenting with this attention grabbing UI landing page design!</p>
+                    <div class="portfolio-anchors">
+                        <a class="github-btn" href="#">Github</a>
+                        <a class="demo-btn" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="port-item box6">
+                <div class="portfolio-content">
+                    <h2>Simon Game</h2>
+                    <hr>
+                    <p>Web based game inspired by the popular “Simon” memory game.</p>
+                    <div class="portfolio-anchors">
+                        <a class="github-btn" href="#">Github</a>
+                        <a class="demo-btn" href="#">Demo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -82,13 +147,19 @@
                         Bootstrap4,
                         Java, Python and more.</p>
                 </div>
+
+                <div class="cv-item cv-image-right mobile-view">
+                    <img src="images/design-girl.svg" alt="a girl with some squares symbolising design skill set">
+                </div>
+
                 <div class="cv-item cv-text-left">
                     <h3>Familiar with good design principles.</h3>
                     <p>I am familiar with the basic principles of UI/UX design and also experienced in some design
                         tools
                         such as Affinity Designer and Figma.</p>
                 </div>
-                <div class="cv-item cv-image-right">
+
+                <div class="cv-item cv-image-right desktop-view">
                     <img src="images/design-girl.svg" alt="a girl with some squares symbolising design skill set">
                 </div>
                 <div class="cv-item cv-image-left">
