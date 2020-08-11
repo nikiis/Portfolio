@@ -649,4 +649,23 @@ nav a:hover {
         display: flex;
         flex-direction: column;
     }
+
+    .contact-wrapper h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-wrapper p {
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cv-item img {
+        width: 80%;
+    }
+
+    .cv-item h3 {
+        padding: 0 10px;
+    }
 }
