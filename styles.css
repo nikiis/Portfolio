@@ -666,3 +666,15 @@ nav a:hover {
         padding: 0 10px;
     }
 }
+
+/* for super large screens */
+
+@media screen and (min-width: 1920px) {
+    .content {
+        transform: scale(0.7);
+    }
+
+    .portfolio-content {
+        margin: 0 20%;
+    }
+}
